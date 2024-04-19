@@ -15,6 +15,10 @@ const config: Config = {
       },
     },
   },
+  purge: {
+    enabled: true,
+    content: ["./src/**/*.{html,ts,tsx}", "./.storybook/**/*.{ts,tsx}"],
+  },
   plugins: [],
 };
 export default config;
